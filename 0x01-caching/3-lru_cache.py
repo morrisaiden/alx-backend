@@ -12,10 +12,18 @@ class LRUCache(BaseCaching):
      that inherits from BaseCaching and is a caching system
     """
     def __init__(self):
+        """_summary_
+        """
         super().__init__()
         self.cache_data = OrderedDict()
 
     def put(self, key, item):
+        """_summary_
+
+        Args:
+            key (_type_): _description_
+            item (_type_): _description_
+        """
         if key is None or item is None:
             return
 
@@ -29,6 +37,14 @@ class LRUCache(BaseCaching):
             print(f"DISCARD: {oldest_key}")
 
     def get(self, key):
+        """_summary_
+
+        Args:
+            key (_type_): _description_
+
+        Returns:
+            _type_: _description_
+        """
         if key is None or key not in self.cache_data:
             return None
 
