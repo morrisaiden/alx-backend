@@ -8,6 +8,11 @@ from collections import OrderedDict
 
 
 class LRUCache(BaseCaching):
+    """_summary_
+
+    Args:
+        BaseCaching (_type_): _description_
+    """
     def __init__(self):
         super().__init__()
         self.cache_data = OrderedDict()
