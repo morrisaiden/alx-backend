@@ -8,10 +8,8 @@ from collections import OrderedDict
 
 
 class LRUCache(BaseCaching):
-    """_summary_
-
-    Args:
-        BaseCaching (_type_): _description_
+    """
+     that inherits from BaseCaching and is a caching system
     """
     def __init__(self):
         super().__init__()
