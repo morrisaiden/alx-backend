@@ -1,0 +1,1 @@
+A queuing system in JavaScript is often used to handle tasks or events in a specific order, ensuring that each task is processed one after another. A basic example of this would be an asynchronous task queue where tasks are added and processed sequentially.
